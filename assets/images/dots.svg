@@ -1,0 +1,22 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="100"
+    width="100"
+    viewbox="0 0 100 100">
+    <rect
+        x="0"
+        y="0"
+        height="100"
+        width="100"
+        style="fill:#ccddee;" />
+    <circle
+        cx="25"
+        cy="25"
+        r="10"
+        style="fill:#ffffff;" />
+    <circle
+        cx="75"
+        cy="75"
+        r="10"
+        style="fill:#ffffff;" />
+</svg>

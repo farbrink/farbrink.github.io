@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+}
+
+.cover-letter-switch {
+    border: 3px solid transparent;
+    border-radius: 1em;
+    cursor: pointer;
+    float: left;
+    height: 2em;
+    margin-right: 0.75em;
+    width: 2em;
+}
+
+.cover-letter-switch.-birch { background-color: #a4bb77; }
+.cover-letter-switch.-birch.-open { border-color: #669900; }
+
+.cover-letter-switch.-cherry { background-color: #ffc3e1; }
+.cover-letter-switch.-cherry.-open { border-color: #ff6699; }
+
+.cover-letter-switch.-willow { background-color: #b9d0e8; }
+.cover-letter-switch.-willow.-open { border-color: #7799ff; }
+
+.cover-letter-switches {
+    height: 2em;
+    overflow: visible;
+    position: relative;
+}

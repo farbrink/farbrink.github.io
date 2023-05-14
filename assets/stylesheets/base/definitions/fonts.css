@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Fontin';
+    src: url('../../../fonts/fontin/Fontin-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../../../fonts/fontin/Fontin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../../fonts/fontin/Fontin-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../../fonts/fontin/Fontin-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../../fonts/fontin/Fontin-Regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fontin Sans';
+    src: url('../../../fonts/fontin_sans/FontinSans-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../../../fonts/fontin_sans/FontinSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../../fonts/fontin_sans/FontinSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../../../fonts/fontin_sans/FontinSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../../fonts/fontin_sans/FontinSans-Regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}

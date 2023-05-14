@@ -1,0 +1,54 @@
+@import './base/definitions/fonts.css';
+@import './base/definitions/mixins.css';
+
+@import './base/reset.css';
+
+@import './base/buttons_and_links.css';
+@import './base/headers.css';
+@import './base/layout_elements.css';
+@import './base/typography.css';
+
+@import './base/global_modifiers.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dddddd;
+    height: 0;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+html {
+    font-size: 100%;
+}
+
+.icon {
+    display: inline-block;
+    height: 2em;
+    width: 3em;
+    padding: 0 0.5em;
+}
+
+.icons {
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image {
+    border: 0.25em solid #dddddd;
+    width: 100%;
+}

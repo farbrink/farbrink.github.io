@@ -1,0 +1,89 @@
+@mixin faux-table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+    
+    & > div {
+        display: table-row;
+        width: 100%;
+        
+        & > div {
+            display: table-cell;
+        }
+    }
+}
+
+@mixin overflow-clear {
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+}
+
+@mixin text-outline ( $color, $width ) {
+    $width: $width + 0;
+    $shadow: 0 0 0 transparent;
+    $i: 0;
+    $w: 1;
+
+    @while ( $i < $width ) {
+        $i: $i + 1;
+        $j: 0;
+        $w: $w + 2;
+
+        @for $r from 1 through $w {
+            @for $c from 1 through $w {
+                $x: $c - ceil($w / 2);
+                $y: $r - ceil($w / 2);
+
+                $shadow: #{$shadow}, #{$x}px #{$y}px 0 $color;
+            }
+        }
+    }
+
+    text-shadow: $shadow;
+}
+
+@mixin cursive-family {
+    font-family: 'Marck Script', 'Brush Script MT', cursive;
+}
+
+@mixin sans-serif-family {
+    font-family: 'Fontin Sans', Helvetica, 'Trebuchet MS', sans-serif;
+}
+
+@mixin serif-family {
+    font-family: 'Fontin', Impact, serif;
+}
+
+@mixin spacers--horizontal {
+    & > * {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    
+    & > *:first-child {
+        padding-top: 0;
+    }
+    
+    & > *:last-child {
+        padding-bottom: 0;
+    }
+}
+
+@mixin spacers--vertical {
+    & > * {
+    
+        & > * {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        
+        & > *:first-child {
+            padding-left: 0;
+        }
+        
+        & > *:last-child {
+            padding-right: 0;
+        }
+    }
+}

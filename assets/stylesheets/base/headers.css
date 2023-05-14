@@ -1,0 +1,50 @@
+.header {
+    background-color: #dddddd;
+    border-bottom: 1px solid #bbbbbb;
+    line-height: 4em;
+    position: relative;
+    width: 100%;
+}
+
+.header.-seamless {
+    background-color: #ffffff;
+    border-bottom: none;
+}
+
+.header.-sticky {
+    background-color: rgba( 256, 256, 256, 0.90 );
+    border-bottom: 1px solid #bbbbbb;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__nav {
+    float: right;
+}
+
+.header__nav a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+.header__nav a:hover {
+    border-bottom: 2px solid #999999;
+}
+
+.header__nav ul li {
+    float: left;
+    margin-left: 2em;
+}
+
+.header-wrapper {
+    background-color: #ffffff;
+    display: block;
+    height: 4em;
+    overflow: hidden;
+    width: 100%;
+    zoom: 1;
+}

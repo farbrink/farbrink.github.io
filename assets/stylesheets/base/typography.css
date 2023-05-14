@@ -1,0 +1,76 @@
+a {
+    color: #444444;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Fontin Sans', Helvetica, 'Trebuchet MS', sans-serif;
+
+    color: #444444;
+    line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: 16px; }
+
+label {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0.6em;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.75em;
+    margin-bottom: 16px;
+}
+
+b, strong { font-weight: bold; }
+em, i { font-style: italic; }
+
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+.bulleted {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5em;
+    list-style: disc outside none;
+    padding-left: 1em;
+}
+
+.centered { text-align: center; }
+
+.heading { 
+    font-family: 'Fontin', Impact, serif;
+}
+
+.heading.-fine { font-size: 24px; }
+.heading.-medium { font-size: 28px; }
+.heading.-large { font-size: 32px; }
+.heading.-grand { font-size: 48px; }
+.heading.-giant { font-size: 64px; }
+
+.heading.-flourish {
+    font-family: 'Marck Script', 'Brush Script MT', cursive;
+}
+
+.outline-birch { @include text-outline( $color-sprout, 3 ); }
+.outline-cherry { @include text-outline( $color-lavender-blush, 3 ); }
+.outline-willow { @include text-outline( $color-pattens-blue, 3 ); }
+
+.t-fine { font-size: 16px; }
+.t-medium { font-size: 18px; }
+.t-large { font-size: 20px; }
+
+a.underlined, span.underlined { text-decoration: underline; }
+.heading.underlined { 
+    border-bottom: 1px solid #444444; 
+    display: block; 
+    padding-bottom: 4px; 
+    width: 100%; 
+} 
