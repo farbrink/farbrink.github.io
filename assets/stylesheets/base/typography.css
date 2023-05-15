@@ -59,9 +59,51 @@ em, i { font-style: italic; }
     font-family: 'Marck Script', 'Brush Script MT', cursive;
 }
 
-.outline-birch { @include text-outline( $color-sprout, 3 ); }
-.outline-cherry { @include text-outline( $color-lavender-blush, 3 ); }
-.outline-willow { @include text-outline( $color-pattens-blue, 3 ); }
+.outline-birch {
+    text-shadow: 0 0 0 #bbcc99,
+    -1px -1px 0 #bbcc99, 0px -1px 0 #bbcc99, 1px -1px 0 #bbcc99, -1px 0px 0 #bbcc99,
+    1px 0px 0 #bbcc99, -1px 1px 0 #bbcc99, 0px 1px 0 #bbcc99, 1px 1px 0 #bbcc99,
+    -2px -2px 0 #bbcc99, -1px -2px 0 #bbcc99, 0px -2px 0 #bbcc99, 1px -2px 0 #bbcc99,
+    2px -2px 0 #bbcc99, -2px -1px 0 #bbcc99, 2px -1px 0 #bbcc99, -2px 0px 0 #bbcc99,
+    2px 0px 0 #bbcc99, -2px 1px 0 #bbcc99, 2px 1px 0 #bbcc99, -2px 2px 0 #bbcc99,
+    -1px 2px 0 #bbcc99, 0px 2px 0 #bbcc99, 1px 2px 0 #bbcc99, 2px 2px 0 #bbcc99,
+    -3px -3px 0 #bbcc99, -2px -3px 0 #bbcc99, -1px -3px 0 #bbcc99, 0px -3px 0 #bbcc99,
+    1px -3px 0 #bbcc99, 2px -3px 0 #bbcc99, 3px -3px 0 #bbcc99, -3px -2px 0 #bbcc99,
+    3px -2px 0 #bbcc99, -3px -1px 0 #bbcc99, 3px -1px 0 #bbcc99, -3px 0px 0 #bbcc99,
+    3px 0px 0 #bbcc99, -3px 1px 0 #bbcc99, 3px 1px 0 #bbcc99, -3px 2px 0 #bbcc99,
+    3px 2px 0 #bbcc99, -3px 3px 0 #bbcc99, -2px 3px 0 #bbcc99, -1px 3px 0 #bbcc99,
+    0px 3px 0 #bbcc99, 1px 3px 0 #bbcc99, 2px 3px 0 #bbcc99, 3px 3px 0 #bbcc99
+}
+.outline-cherry {
+    text-shadow: 0 0 0 #ffddee,
+    -1px -1px 0 #ffddee, 0px -1px 0 #ffddee, 1px -1px 0 #ffddee, -1px 0px 0 #ffddee,
+    1px 0px 0 #ffddee, -1px 1px 0 #ffddee, 0px 1px 0 #ffddee, 1px 1px 0 #ffddee,
+    -2px -2px 0 #ffddee, -1px -2px 0 #ffddee, 0px -2px 0 #ffddee, 1px -2px 0 #ffddee,
+    2px -2px 0 #ffddee, -2px -1px 0 #ffddee, 2px -1px 0 #ffddee, -2px 0px 0 #ffddee,
+    2px 0px 0 #ffddee, -2px 1px 0 #ffddee, 2px 1px 0 #ffddee, -2px 2px 0 #ffddee,
+    -1px 2px 0 #ffddee, 0px 2px 0 #ffddee, 1px 2px 0 #ffddee, 2px 2px 0 #ffddee,
+    -3px -3px 0 #ffddee, -2px -3px 0 #ffddee, -1px -3px 0 #ffddee, 0px -3px 0 #ffddee,
+    1px -3px 0 #ffddee, 2px -3px 0 #ffddee, 3px -3px 0 #ffddee, -3px -2px 0 #ffddee,
+    3px -2px 0 #ffddee, -3px -1px 0 #ffddee, 3px -1px 0 #ffddee, -3px 0px 0 #ffddee,
+    3px 0px 0 #ffddee, -3px 1px 0 #ffddee, 3px 1px 0 #ffddee, -3px 2px 0 #ffddee,
+    3px 2px 0 #ffddee, -3px 3px 0 #ffddee, -2px 3px 0 #ffddee, -1px 3px 0 #ffddee,
+    0px 3px 0 #ffddee, 1px 3px 0 #ffddee, 2px 3px 0 #ffddee, 3px 3px 0 #ffddee
+}
+.outline-willow {
+    text-shadow: 0 0 0 #ccddee,
+    -1px -1px 0 #ccddee, 0px -1px 0 #ccddee, 1px -1px 0 #ccddee, -1px 0px 0 #ccddee,
+    1px 0px 0 #ccddee, -1px 1px 0 #ccddee, 0px 1px 0 #ccddee, 1px 1px 0 #ccddee,
+    -2px -2px 0 #ccddee, -1px -2px 0 #ccddee, 0px -2px 0 #ccddee, 1px -2px 0 #ccddee,
+    2px -2px 0 #ccddee, -2px -1px 0 #ccddee, 2px -1px 0 #ccddee, -2px 0px 0 #ccddee,
+    2px 0px 0 #ccddee, -2px 1px 0 #ccddee, 2px 1px 0 #ccddee, -2px 2px 0 #ccddee,
+    -1px 2px 0 #ccddee, 0px 2px 0 #ccddee, 1px 2px 0 #ccddee, 2px 2px 0 #ccddee,
+    -3px -3px 0 #ccddee, -2px -3px 0 #ccddee, -1px -3px 0 #ccddee, 0px -3px 0 #ccddee,
+    1px -3px 0 #ccddee, 2px -3px 0 #ccddee, 3px -3px 0 #ccddee, -3px -2px 0 #ccddee,
+    3px -2px 0 #ccddee, -3px -1px 0 #ccddee, 3px -1px 0 #ccddee, -3px 0px 0 #ccddee,
+    3px 0px 0 #ccddee, -3px 1px 0 #ccddee, 3px 1px 0 #ccddee, -3px 2px 0 #ccddee,
+    3px 2px 0 #ccddee, -3px 3px 0 #ccddee, -2px 3px 0 #ccddee, -1px 3px 0 #ccddee,
+    0px 3px 0 #ccddee, 1px 3px 0 #ccddee, 2px 3px 0 #ccddee, 3px 3px 0 #ccddee
+}
 
 .t-fine { font-size: 16px; }
 .t-medium { font-size: 18px; }

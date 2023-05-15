@@ -14,7 +14,7 @@ export const instateCoverLetterSwitches = function (  ) {
     }, 2000 );
 }
 
-export const instateResizeRefresh = function (  ) {
+export const instateResizeRefresh = function ( type ) {
     let windowWidth = $( window ).width(  );
     
     $( window ).resize( function (  ) {

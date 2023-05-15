@@ -292,7 +292,7 @@ class Branch {
   }
 
   generateLeaf (  ) {
-    if ( this.generator.config.leaves ) {
+    if ( this.generator.config.leaves && this.width >= 1 ) {
       var flex = this.width * this.generator.config.leafFlex;
       var angle = Math.atan2( this.dy, this.dx );
       var flexX = flex * Math.abs( Math.sin( angle ) );
@@ -320,7 +320,6 @@ class Branch {
   }
 
   generateTwig (  ) {
-    
     var width = ( this.width ) * this.generator.config.branchWidth;
     var x = this.x;
     var y = this.y;
@@ -344,7 +343,7 @@ class Branch {
         this.generator.canvas.context2d.moveTo( Math.floor( this.xPrev ), Math.floor( this.yPrev ) );
         
         this.lifetime = this.lifetime + 1;
-        this.width = this.width - this.loss;
+        this.width = this.width > this.loss ? this.width - this.loss : 0;
         this.xPrev = this.x;
         this.yPrev = this.y;
         this.x = this.x + this.dx;
@@ -384,7 +383,6 @@ class Branch {
   }
 
   start (  ) {
-    
     var activeIndex = this.generator.activeBranches.indexOf( this );
     var queuedIndex = this.generator.queuedBranches.indexOf( this );
     var self = this;
@@ -444,6 +442,27 @@ class Leader extends Branch {
     return( splittable );
   }
 
+  continueGrowth (  ) {
+    if ( this.width >= 2 ) {
+        this.guide(  );
+    // terminate in a small twig.
+    } else {
+        var activeIndex = this.generator.activeBranches.indexOf( this );
+        var childTwig = new Twig( this.level + 1, this.generator, this, this.width, this.x, this.y );
+        
+        this.twigs.push( childTwig );
+        this.generator.twigs.push( childTwig );
+        
+        if ( activeIndex != -1 ) {
+            this.generator.activeBranches.splice( activeIndex, 1 );
+            
+            if ( this.generator.queuedBranches.length > 0 ) {
+                this.generator.queuedBranches[ 0 ].start(  );
+            }
+        }
+    }
+  }
+
   guide (  ) {
     this.dx = this.dx + Math.sin( Math.random(  ) + this.lifetime ) * ( ( 1 / 2 ) * this.generator.config.wiggle );
     this.dy = -1 * this.generator.config.growthSegmentLength;
@@ -473,7 +492,6 @@ class Leaf {
   }
 
   grow (  ) {
-  
     if ( this.live ) {
       this.generator.leafCanvas.context2d.beginPath(  );
       this.generator.leafCanvas.context2d.arc( this.x, this.y, this.radius, 0, 2 * Math.PI, false );
@@ -521,7 +539,6 @@ class Limb extends Branch {
 
   continueGrowth (  ) {
     if ( this.width >= 2 ) {
-        
         this.guide(  );
     // terminate in a small twig.
     } else {
