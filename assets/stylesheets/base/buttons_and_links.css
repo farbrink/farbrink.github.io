@@ -4,12 +4,12 @@ a {
 
 .cover-letter-switch {
     border: 3px solid transparent;
-    border-radius: 1em;
+    border-radius: 16px;
     cursor: pointer;
     float: left;
-    height: 2em;
+    height: 32px;
     margin-right: 0.75em;
-    width: 2em;
+    width: 32px;
 }
 
 .cover-letter-switch.-birch { background-color: #a4bb77; }
@@ -21,8 +21,11 @@ a {
 .cover-letter-switch.-willow { background-color: #b9d0e8; }
 .cover-letter-switch.-willow.-open { border-color: #7799ff; }
 
+.cover-letter-switch.-wisteria { background-color: #d9c3ef; }
+.cover-letter-switch.-wisteria.-open { border-color: #9966dd; }
+
 .cover-letter-switches {
-    height: 2em;
+    height: 32px;
     overflow: visible;
     position: relative;
 }

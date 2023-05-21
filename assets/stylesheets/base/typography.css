@@ -105,6 +105,22 @@ em, i { font-style: italic; }
     0px 3px 0 #ccddee, 1px 3px 0 #ccddee, 2px 3px 0 #ccddee, 3px 3px 0 #ccddee
 }
 
+.outline-wisteria {
+    text-shadow: 0 0 0 #e1d2ff,
+    -1px -1px 0 #e1d2ff, 0px -1px 0 #e1d2ff, 1px -1px 0 #e1d2ff, -1px 0px 0 #e1d2ff,
+    1px 0px 0 #e1d2ff, -1px 1px 0 #e1d2ff, 0px 1px 0 #e1d2ff, 1px 1px 0 #e1d2ff,
+    -2px -2px 0 #e1d2ff, -1px -2px 0 #e1d2ff, 0px -2px 0 #e1d2ff, 1px -2px 0 #e1d2ff,
+    2px -2px 0 #e1d2ff, -2px -1px 0 #e1d2ff, 2px -1px 0 #e1d2ff, -2px 0px 0 #e1d2ff,
+    2px 0px 0 #e1d2ff, -2px 1px 0 #e1d2ff, 2px 1px 0 #e1d2ff, -2px 2px 0 #e1d2ff,
+    -1px 2px 0 #e1d2ff, 0px 2px 0 #e1d2ff, 1px 2px 0 #e1d2ff, 2px 2px 0 #e1d2ff,
+    -3px -3px 0 #e1d2ff, -2px -3px 0 #e1d2ff, -1px -3px 0 #e1d2ff, 0px -3px 0 #e1d2ff,
+    1px -3px 0 #e1d2ff, 2px -3px 0 #e1d2ff, 3px -3px 0 #e1d2ff, -3px -2px 0 #e1d2ff,
+    3px -2px 0 #e1d2ff, -3px -1px 0 #e1d2ff, 3px -1px 0 #e1d2ff, -3px 0px 0 #e1d2ff,
+    3px 0px 0 #e1d2ff, -3px 1px 0 #e1d2ff, 3px 1px 0 #e1d2ff, -3px 2px 0 #e1d2ff,
+    3px 2px 0 #e1d2ff, -3px 3px 0 #e1d2ff, -2px 3px 0 #e1d2ff, -1px 3px 0 #e1d2ff,
+    0px 3px 0 #e1d2ff, 1px 3px 0 #e1d2ff, 2px 3px 0 #e1d2ff, 3px 3px 0 #e1d2ff
+}
+
 .t-fine { font-size: 16px; }
 .t-medium { font-size: 18px; }
 .t-large { font-size: 20px; }

@@ -1,7 +1,7 @@
 import * as k from "./main/cover_letter.js";
 
 let tree;
-let type = [ 'birch', 'cherry', 'willow' ][ Math.floor( Math.random(  ) * 3 ) ];
+let type = [ 'birch', 'cherry', 'willow', 'wisteria' ][ Math.floor( Math.random(  ) * 4 ) ];
 let windowWidth = $( window ).width(  );
 
 $( document ).ready( function (  ) {

@@ -97,11 +97,8 @@ export const setCoverLetterColor = function ( type ) {
 }
 
 const _emphasizeSwitches = function (  ) {
-    const $switches = $( '.js-cover-letter-switch' );
-    
-    // assuming all switches are the same size.
-    const switchHeight = $switches.outerHeight(  );
-    const switchWidth = $switches.outerWidth(  );
+    const switchHeight = 32;
+    const switchWidth = 32;
     
     animateInSequence( '.js-cover-letter-switch', 
         [ { 
