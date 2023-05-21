@@ -93,6 +93,7 @@ export const setCoverLetterColor = function ( type ) {
         .removeClass( 'outline-birch' )
         .removeClass( 'outline-cherry' )
         .removeClass( 'outline-willow' )
+        .removeClass( 'outline-wisteria' )
         .addClass( 'outline-' + type );
 }
 
