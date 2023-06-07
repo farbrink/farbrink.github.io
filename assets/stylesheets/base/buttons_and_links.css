@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 
-.cover-letter-switch {
+.scene-switch {
     border: 3px solid transparent;
     border-radius: 16px;
     cursor: pointer;
@@ -12,19 +12,19 @@ a {
     width: 32px;
 }
 
-.cover-letter-switch.-birch { background-color: #a4bb77; }
-.cover-letter-switch.-birch.-open { border-color: #669900; }
+.scene-switch.-birch { background-color: #a4bb77; }
+.scene-switch.-birch.-open { border-color: #669900; }
 
-.cover-letter-switch.-cherry { background-color: #ffc3e1; }
-.cover-letter-switch.-cherry.-open { border-color: #ff6699; }
+.scene-switch.-cherry { background-color: #ffc3e1; }
+.scene-switch.-cherry.-open { border-color: #ff6699; }
 
-.cover-letter-switch.-willow { background-color: #b9d0e8; }
-.cover-letter-switch.-willow.-open { border-color: #7799ff; }
+.scene-switch.-willow { background-color: #b9d0e8; }
+.scene-switch.-willow.-open { border-color: #7799ff; }
 
-.cover-letter-switch.-wisteria { background-color: #d9c3ef; }
-.cover-letter-switch.-wisteria.-open { border-color: #9966dd; }
+.scene-switch.-wisteria { background-color: #d9c3ef; }
+.scene-switch.-wisteria.-open { border-color: #9966dd; }
 
-.cover-letter-switches {
+.scene-switches {
     height: 32px;
     overflow: visible;
     position: relative;

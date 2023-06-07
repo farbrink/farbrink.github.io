@@ -1,7 +1,7 @@
 .header {
     background-color: #dddddd;
     border-bottom: 1px solid #bbbbbb;
-    line-height: 4em;
+    line-height: 64px;
     position: relative;
     width: 100%;
 }
@@ -43,7 +43,7 @@
 .header-wrapper {
     background-color: #ffffff;
     display: block;
-    height: 4em;
+    height: 64px;
     overflow: hidden;
     width: 100%;
     zoom: 1;

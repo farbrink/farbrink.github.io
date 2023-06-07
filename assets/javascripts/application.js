@@ -1,46 +1,24 @@
-import * as k from "./main/cover_letter.js";
+import {
+  instateResizeRefresh,
+  instateSceneSwitches,
+  instateScrollTo,
+  instateStickyHeader,
+  prepareScene
+} from "./main/prepare.js";
 
-let tree;
-let type = [ 'birch', 'cherry', 'willow', 'wisteria' ][ Math.floor( Math.random(  ) * 4 ) ];
-let windowWidth = $( window ).width(  );
+window.sceneType     = ['birch', 'cherry', 'willow', 'wisteria'][Math.floor(Math.random() * 4)];
+window.treeInstances = []
 
-$( document ).ready( function (  ) {
-  console.log( 'Document loaded.' )
-  console.log( type )
+$(document).ready(function () {
+  console.log('Document loaded.')
 
-  k.instateScrollTo(  );
-  
-  k.instateCoverLetterSwitches(  );
-  k.prepareCoverLetter( type );
-} );
+  instateScrollTo();
 
-console.log( 'Script loaded.' )
+  instateSceneSwitches();
+  prepareScene(window.sceneType);
+});
 
-k.instateResizeRefresh( type );
-k.instateStickyHeader(  );
+console.log('Script loaded.')
 
-const textOutline = function ( color, width ) {
-  width = width + 0;
-  let shadow = "0 0 0 transparent";
-  let i = 0;
-  let w = 1;
-
-  while ( i < width ) {
-      i = i + 1;
-      let j = 0;
-      w = w + 2;
-
-      for (let r = 1; r <= w; r++) {
-        for (let c = 1; c <= w; c++) {
-              let x = c - Math.ceil(w / 2);
-              let y = r - Math.ceil(w / 2);
-
-              shadow = `${shadow}, "${x}px ${y}px 0 ${color}"`;
-          }
-      }
-  }
-
-  console.log(shadow)
-}
-
-console.log(textOutline)
+instateResizeRefresh();
+instateStickyHeader();
